@@ -11,9 +11,9 @@ namespace RPSLS_Game
         //member variables
         HumanPlayer player1;
         Player player2;
+        Choice i = new Choice();
 
         //ComputerPlayer player3; Do I need this?
-        List<string> choices = new List<string>(new string[] { "Rock", "Paper", "Scissors", "Lizard", "Spock" }); //Should this be here or in Choice.cs and why does list in choices not work???
 
         public Game()
         {
@@ -63,7 +63,6 @@ namespace RPSLS_Game
             int player1choice = player1.UserInput();
             int player2choice = player2.UserInput();
 
-            //Rock = 0, Paper = 1, Scissors = 2, Lizard = 3, Spock = 4
             if(player1choice == player2choice)
             {
                 Console.WriteLine("You tied! Try again!");
@@ -73,13 +72,13 @@ namespace RPSLS_Game
                 if(player2choice == 2 || player2choice == 3)
                 {
                     Console.WriteLine(player1.name + " wins!");
-                    Console.WriteLine(player2.name + " chose " + choices[player2choice]);
+                    Console.WriteLine(player2.name + " chose " + i.choices[player2choice]);
                     player1.score++;
                 }
                 else
                 {
                     Console.WriteLine(player2.name + " wins!");
-                    Console.WriteLine(player2.name + " chose " + choices[player2choice]);
+                    Console.WriteLine(player2.name + " chose " + i.choices[player2choice]);
                     player2.score++;
                 }
             }
@@ -88,13 +87,13 @@ namespace RPSLS_Game
                 if(player2choice == 0 || player2choice == 4)
                 {
                     Console.WriteLine(player1.name + " wins!");
-                    Console.WriteLine(player2.name + " chose " + choices[player2choice]);
+                    Console.WriteLine(player2.name + " chose " + i.choices[player2choice]);
                     player1.score++;
                 }
                 else
                 {
                     Console.WriteLine(player2.name + " wins!");
-                    Console.WriteLine(player2.name + " chose " + choices[player2choice]);
+                    Console.WriteLine(player2.name + " chose " + i.choices[player2choice]);
                     player2.score++;
                 }
             }
@@ -103,13 +102,13 @@ namespace RPSLS_Game
                 if(player2choice == 1 || player2choice == 3)
                 {
                     Console.WriteLine(player1.name + " wins!");
-                    Console.WriteLine(player2.name + " chose " + choices[player2choice]);
+                    Console.WriteLine(player2.name + " chose " + i.choices[player2choice]);
                     player1.score++;
                 }
                 else
                 {
                     Console.WriteLine(player2.name + " wins!");
-                    Console.WriteLine(player2.name + " chose " + choices[player2choice]);
+                    Console.WriteLine(player2.name + " chose " + i.choices[player2choice]);
                     player2.score++;
                 }
             }
@@ -118,13 +117,13 @@ namespace RPSLS_Game
                 if(player2choice == 1 || player2choice == 4)
                 {
                     Console.WriteLine(player1.name + " wins!");
-                    Console.WriteLine(player2.name + " chose " + choices[player2choice]);
+                    Console.WriteLine(player2.name + " chose " + i.choices[player2choice]);
                     player1.score++;
                 }
                 else
                 {
                     Console.WriteLine(player2.name + " wins!");
-                    Console.WriteLine(player2.name + " chose " + choices[player2choice]);
+                    Console.WriteLine(player2.name + " chose " + i.choices[player2choice]);
                     player2.score++;
                 }
             }
@@ -133,13 +132,13 @@ namespace RPSLS_Game
                 if(player2choice == 0 || player2choice == 2)
                 {
                     Console.WriteLine(player1.name + " wins!");
-                    Console.WriteLine(player2.name + " chose " + choices[player2choice]);
+                    Console.WriteLine(player2.name + " chose " + i.choices[player2choice]);
                     player1.score++;
                 }
                 else
                 {
                     Console.WriteLine(player2.name + " wins!");
-                    Console.WriteLine(player2.name + " chose " + choices[player2choice]);
+                    Console.WriteLine(player2.name + " chose " + i.choices[player2choice]);
                     player2.score++;
                 }
             }

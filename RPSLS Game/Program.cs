@@ -11,8 +11,7 @@ namespace RPSLS_Game
         static void Main(string[] args)
         {
             Game game = new Game();
-            game.Rounds();
-            Console.ReadLine();
+            //game.Rounds();
             Console.ReadKey();
         }
     }
