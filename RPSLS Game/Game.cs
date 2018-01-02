@@ -13,8 +13,6 @@ namespace RPSLS_Game
         Player player2;
         Choice i = new Choice();
 
-        //ComputerPlayer player3; Do I need this?
-
         public Game()
         {
             DisplayRules();
