@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace RPSLS_Game
 {
-    class Program
+    public class HumanPlayer : Player 
     {
-        static void Main(string[] args)
+        public HumanPlayer()
         {
-            Game game = new Game();
-            game.Rounds();
-            Console.ReadLine();
-            Console.ReadKey();
+            Console.WriteLine("Enter your name");
+            name = Console.ReadLine();
         }
     }
 }
