@@ -37,6 +37,7 @@ namespace RPSLS_Game
             Console.WriteLine("Enter 1 for Player vs Computer.");
             Console.WriteLine("Enter 2 for Player vs Player.");
             string playerTypes = Console.ReadLine();
+
             switch (playerTypes)
             {
                 case "1":
@@ -150,7 +151,7 @@ namespace RPSLS_Game
             }
             if(player1.score == 2)
             {
-                Console.WriteLine(player1.name + " Wins the game!"); //why does it show up twice???
+                Console.WriteLine(player1.name + " Wins the game!");
             }
             else
             {
